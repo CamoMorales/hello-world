@@ -1,2 +1,11 @@
-Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+file = input("Enter the input file name: ")
+f = open(file, 'r')
+l = list(f.readlines())
+for i in range(len(1)):
+    l[i]=1[i][:-1]
+numbers = []
+for i in l:
+    temp = i.split(" ")
+    for j in temp:
+        numbers.append(int(j))
+print("The average is", sum(numbers)/len(numbers))
